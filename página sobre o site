@@ -3,130 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>B404 Notícias</title>
+  <title>B404 Notícias - Página com Imagens</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
       min-height: 100vh;
+      position: relative;
     }
+
     .header {
       width: 100%;
-      background-color: #58bcff;
+      background-color: #0051ff;
+      color: white;
       padding: 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 10;
       display: flex;
       align-items: center;
-      justify-content: space-between;
     }
+
     .logo {
       height: 50px;
     }
-    .search-box {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .search-input {
-      padding: 8px 12px;
-      border-radius: 20px;
-      border: 1px solid #ccc;
+
+    .header-text {
+      margin-left: 20px;
       font-size: 14px;
     }
-    .search-button {
-      padding: 8px 12px;
-      border-radius: 20px;
-      border: none;
-      background-color: #194f75;
-      color: white;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    .back-button {
+
+    .config-button {
       position: fixed;
-      top: 20px;
       right: 20px;
-      background-color: #194f75;
+      bottom: 20px; /* atualizado para parte inferior direita */
+      background-color: #4A90E2;
       color: white;
       border: none;
-      border-radius: 25px;
-      padding: 10px 16px;
+      padding: 14px 16px;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+
+    .container {
+      padding: 30px 20px;
+      margin-top: 20px;
+    }
+
+    .novas-button {
+      background-color: #4a6de2;
+      color: white;
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background-color: transparent;
+      color: #194f75;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .caption {
+      margin-top: 8px;
       font-size: 16px;
       font-weight: bold;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .back-button::before {
-      content: '←';
-      font-size: 20px;
-    }
-    .content {
-      margin-top: 160px;
-      padding: 40px;
-      text-align: center;
-      font-size: 24px;
-    }
-    h1 {
-      margin-top: 40px;
-      font-size: 28px;
-      color: #194f75;
     }
   </style>
 </head>
 <body>
   <div class="header">
-    <img src="https://i.ibb.co/x86PZbb8/Imagem-do-Whats-App-de-2025-07-07-s-15-50-03-1f3bea9d.jpg" alt="Logo B404 Notícias" class="logo" />
-    <div class="search-box">
-      <input type="text" class="search-input" placeholder="Buscar notícias..." />
-      <button class="search-button">Pesquisar</button>
+    <img src="logo.png" alt="Logo B404 Notícias" class="logo" />
+    <div class="header-text">
+      <!-- Texto explicativo se desejar -->
     </div>
   </div>
 
-  <button class="back-button" onclick="history.back()">Voltar</button>
+  <button class="config-button">← Configurações</button>
 
-  <div class="content">
-    Nosso site tem o objetivo de fornecer informações sobre diversos temas, como política, economia, cultura, esportes e notícias locais.  
-    Ele oferece notícias em tempo real, vídeos, coberturas exclusivas e informações relevantes sobre o Brasil e o mundo, além de serviços como previsão do tempo e condições de trânsito.
+  <div class="container">
+    <button class="novas-button">Novas</button>
 
-    <h1>O que você encontra no B404 Notícias:</h1>
-    Atualizações em tempo real sobre eventos nacionais e internacionais, com foco em diversas áreas como política, economia, esportes e cultura.
-  <h2 style="margin-top: 30px; font-size: 26px; color: #194f75;">
-  Coberturas Exclusivas:
-</h2>
-<p>
-  O B404 oferece coberturas aprofundadas e exclusivas sobre temas relevantes, com foco em notícias locais e regionais.
-</p>
-
-<h3 style="margin-top: 25px; font-size: 24px; color: #194f75;">
-  Vídeos:
-</h3>
-<p>
-  O portal disponibiliza vídeos com notícias, reportagens e entrevistas, complementando o conteúdo informativo.
-</p>
-
-<h4 style="margin-top: 20px; font-size: 22px; color: #194f75;">
-  Serviços:
-</h4>
-<p>
-  Além das notícias, o B404 oferece serviços como previsão do tempo, informações sobre o trânsito e notícias sobre a sua região, facilitando o acesso a informações importantes para o dia a dia.
-</p>
-
-<h5 style="margin-top: 15px; font-size: 20px; color: #194f75;">
-  Fato ou Fake:
-</h5>
-<p>
-  O B404 também conta com o serviço "Fato ou Fake", que investiga e esclarece notícias falsas ou suspeitas, auxiliando na luta contra a desinformação.
-</p>
-</div>
+    <div class="image-grid">
+      <div class="card">
+        <img src="https://i.ibb.co/BVHGyykz/1591126009-5ed6a7f9d0be1-hd.jpg" alt="Notícia 1" />
+        <p class="caption">Homem salva cachorro de afogamento no litoral de SP</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/pvs2sMCt/d0f76551-46a2-44a3-ad3e-f5d8c01f3dad.jpg" alt="Notícia 2" />
+        <p class="caption">Homem é atacado por bando de macacos na Índia</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/HDdPfcRV/Design-sem-nome.jpg" alt="Notícia 3" />
+        <p class="caption">MICHAEL JACKSON vivo visto na Avenida Paulista, real?</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/k2r184zv/24-09-24-d35ul00mimbrkbw.jpg" alt="Notícia 4" />
+        <p class="caption">Homem é preso após dizer que estava jogando GTA V durante fuga e troca de tiros</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
