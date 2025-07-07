@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B404 Notícias - Tecnologia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    .header {
+      width: 100%;
+      background-color: #0051ff;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .search-input {
+      padding: 8px 12px;
+      border-radius: 20px;
+      border: none;
+      font-size: 14px;
+    }
+
+    .search-button {
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: none;
+      background-color: #194f75;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .config-button {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background-color: #4A90E2;
+      color: white;
+      border: none;
+      padding: 14px 16px;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+
+    .container {
+      padding: 30px 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .section-label {
+      margin: 0 auto 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #194f75;
+    }
+
+    table.section-table {
+      margin: 0 auto 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #194f75;
+      border-collapse: collapse;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background-color: transparent;
+      color: #194f75;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="Logo B404 Notícias" class="logo" />
+    <div class="search-box">
+      <input type="text" class="search-input" placeholder="Buscar notícias..." />
+      <button class="search-button">Pesquisar</button>
+    </div>
+  </div>
+
+  <button class="config-button">← Configurações</button>
+
+  <div class="container">
+    <table class="section-table">
+      <tr>
+        <td>Tecnologia</td>
+      </tr>
+    </table>
+
+    <div class="section-label">Cards de notícias</div>
+
+    <div class="image-grid">
+      <div class="card">
+        <img src="https://i.ibb.co/gb6M0ZWW/marido-reborn-880x512.jpg" alt="Notícia 1" />
+        <p class="caption">Elon musk cria robôs ''reborn'' homens e mulheres ''marido e esposa reborn''' que podem andar e conversar</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/YBnG3CRx/16655927436346eda78f3aa-1665592743-3x2-md.jpg" alt="Notícia 2" />
+        <p class="caption">Primeiro carro voador é testado na arábia</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/yFdtzT2T/futuristic-android-robot-thief-dark-gray-color-generative-ai-124507-79274.jpg" alt="Notícia 3" />
+        <p class="caption">Soldados agora serão 
+            substituídos por robôs militares
+             super potentes na guerra</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/svvC8ndv/entenda-como-funciona-o-chip-cerebral-da-neuralink-empresa-de-elon-musk.webp" alt="Notícia 4" />
+        <p class="caption">Elon musk lança chip neural que permite controlar dispositivos apenas com o pensamento</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
