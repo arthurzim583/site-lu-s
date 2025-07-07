@@ -17,19 +17,21 @@
         .header {
             width: 100%;
             background-color: #007acc;
-            color: white;
-            padding: 20px;
-            text-align: left;
-            font-size: 24px;
+            padding: 40px 20px;
             position: fixed;
             top: 0;
             left: 0;
             z-index: 10;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            height: 50px; /* ajuste conforme o tamanho da sua imagem */
         }
         .back-button {
             position: fixed;
             right: 20px;
-            top: 20px;
+            top: 30px;
             background-color: #005fa3;
             color: white;
             border: none;
@@ -42,7 +44,7 @@
             cursor: pointer;
         }
         .content {
-            padding-top: 100px;
+            padding-top: 120px;
             text-align: center;
             font-size: 24px;
         }
@@ -50,7 +52,7 @@
 </head>
 <body>
     <div class="header">
-        B404 Notícias
+        <img src="logo.png" alt="Logo B404 Notícias" class="logo">
     </div>
     <button class="back-button">
         &larr;
